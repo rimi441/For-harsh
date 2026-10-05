@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+
+
+
+<meta charset="UTF-8">
+...
+</head>
+  <title>For My Harsh</title>
+  <style>
+    body{
+      margin: 0;
+      background: #c4002b;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: cursive;
+    }
+    .container{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .big-gift{
+      font-size: 150px;
+      z-index: 10;
+      cursor: pointer;
+      filter: drop-shadow(0 0 20px rgba(0,0,0,0.3));
+      animation: bounce 2s infinite;
+    }
+    @keyframes bounce{
+      0%,100%{ transform: scale(1); }
+      50%{ transform: scale(1.1); }
+    }
+    .harsh-name{
+      position: absolute;
+      color: #ffb3c6;
+      font-size: 28px;
+      font-weight: bold;
+      text-shadow: 0 0 5px pink;
+    }
+    /* charo taraf naam ki position */
+    .n1{ top: 15%; left: 20%; }
+    .n2{ top: 15%; right: 20%; }
+    .n3{ bottom: 15%; left: 20%; }
+    .n4{ bottom: 15%; right: 20%; }
+    .n5{ top: 10%; left: 50%; transform: translateX(-50%); }
+    .n6{ bottom: 10%; left: 50%; transform: translateX(-50%); }
+    .n7{ left: 10%; top: 50%; transform: translateY(-50%); }
+    .n8{ right: 10%; top: 50%; transform: translateY(-50%); }
+
+    .mini-gifts{
+      position: absolute;
+      font-size: 35px;
+      animation: float 3s infinite;
+    }
+    .g1{ top: 30%; left: 30%; }
+    .g2{ top: 30%; right: 30%; }
+    .g3{ bottom: 30%; left: 45%; }
+    @keyframes float{
+      0%,100%{ transform: translateY(0); }
+      50%{ transform: translateY(-15px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- charo taraf Harsh naam pink me -->
+    <div class="harsh-name n1">Harsh</div>
+    <div class="harsh-name n2">Harsh</div>
+    <div class="harsh-name n3">Harsh</div>
+    <div class="harsh-name n4">Harsh</div>
+    <div class="harsh-name n5">Harsh</div>
+    <div class="harsh-name n6">Harsh</div>
+    <div class="harsh-name n7">Harsh</div>
+    <div class="harsh-name n8">Harsh</div>
+
+    <!-- 3 chote gifts -->
+    <div class="mini-gifts g1">🎀</div>
+    <div class="mini-gifts g2">🎀</div>
+    <div class="mini-gifts g3">🎀</div>
+
+    <!-- bada gift box -->
+    <div class="big-gift">🎁</div>
+  </div>
+  <a href="last.html">next❤️</a>
+</body>
+</html>

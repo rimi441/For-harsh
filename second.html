@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<meta charset="UTF-8">
+...
+</head>
+  <title>i want you harsh</title>
+  <style>
+    body{
+      margin: 0;
+      background: #ff8fab;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    h1{
+      color: white;
+      font-size: 50px;
+      font-family: cursive;
+      z-index: 10;
+      text-shadow: 2px 2px 10px hotpink;
+    }
+    .mini-heart{
+      position: absolute;
+      color: white;
+      font-size: 20px;
+      animation: float 4s infinite linear;
+    }
+    @keyframes float{
+      0% { transform: translateY(100vh); opacity: 1; }
+      100% { transform: translateY(-10vh); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <h1>i want you harsh 🫂</h1>
+  <a href="third.html">next❤️</a>
+
+  <script>
+    function createHeart(){
+      const heart = document.createElement('div');
+      heart.classList.add('mini-heart');
+      heart.innerHTML = '❤️';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.fontSize = Math.random() * 20 + 15 + 'px';
+      heart.style.animationDuration = Math.random() * 3 + 2 + 's';
+      document.body.appendChild(heart);
+      setTimeout(()=>{ heart.remove(); }, 4000);
+    }
+    setInterval(createHeart, 150);
+  </script>
+</body>
+</html>
